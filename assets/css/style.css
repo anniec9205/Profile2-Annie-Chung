@@ -16,3 +16,7 @@ body {
 .icon-block .material-icons {
 	font-size: inherit;
 }
+
+.about-me img {
+  max-height: 200px;
+  }
