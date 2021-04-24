@@ -25,6 +25,9 @@
       </nav>
     </header>
 
+  <div class="container">
+    <div class="cards">
+
     <main class="content">
         <article id="about-me" class="about-me">
             <img src="./assets/images/profile.jpg" class="float-left"/>
@@ -52,6 +55,24 @@
             <li> LinkedIn</li></a>
         </ul>
       </footer>
+
+    <!-- Added scripts -->
+     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="./assets/js/materialize.js"></script>
+    <script src="./assets/js/init.js"></script>
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.scrollspy');
+        var instances = M.ScrollSpy.init(elems, options);
+      });
+
+      // With jQuery
+
+      $(document).ready(function () {
+        $('.scrollspy').scrollSpy();
+      });
+    </script>
     </body>
   
   </html>
